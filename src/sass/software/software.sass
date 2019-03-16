@@ -1,0 +1,70 @@
+.software__header
+    &:before
+        background-image: url('/assets/img/icon-software.png')
+
+.software__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-left: 0.6rem
+    margin-top: -0.7rem
+
+.software__item
+    width: 45%
+    margin-top: 1.5rem
+
+.software__item_main
+    font-weight: normal
+    color: #111
+
+.software__item_secondary
+    display: block
+    position: relative
+    width: 100%
+    height: 1.56rem
+    background-color: $gray
+    margin-top: 0.6rem
+    &:after
+        content: ""
+        position: absolute
+        bottom: 0
+        left: 0
+        background-color: $mainColor
+        width: 0
+        height: 100%
+
+.software__item
+    &:nth-child(1)
+        .software__item_secondary
+            &:after
+                width: 90%
+
+.software__item
+    &:nth-child(2)
+        .software__item_secondary
+            &:after
+                width: 82%
+
+.software__item
+    &:nth-child(3)
+        .software__item_secondary
+            &:after
+                width: 70%
+
+.software__item
+    &:nth-child(4)
+        .software__item_secondary
+            &:after
+                width: 61%
+
+.software__item
+    &:nth-child(5)
+        .software__item_secondary
+            &:after
+                width: 55%
+
+.software__item
+    &:nth-child(6)
+        .software__item_secondary
+            &:after
+                width: 90%

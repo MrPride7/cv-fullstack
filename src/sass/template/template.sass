@@ -1,0 +1,44 @@
+@import ../mixins/mixins
+@import ../variables/variables
+
+*, *:after, *:before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body,html
+    font-size: 16px
+    font-family: 'MyriadPro-Regular', sans-serif
+
+.container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    +margin(83,45,105,66)
+
+//------GRID------
+
+.col-1
+    width: calc(100%/12*1) // 8.3%
+.col-2
+    width: calc(100%/12*2) // 16.6%
+.col-3
+    width: calc(100%/12*3) // 24.9%
+.col-4
+    width: 37% // 33.3%
+.col-5
+    width: calc(100%/12*5) // 41.6%
+.col-6
+    width: calc(100%/12*6) // 50 %
+.col-7
+    width: 56% // 58.3%
+.col-8
+    width: calc(100%/12*8) // 66.6%
+.col-9
+    width: calc(100%/12*9) // 75%
+.col-10
+    width: calc(100%/12*10) // 83.3%
+.col-11
+    width: calc(100%/12*11) // 91.6%
+.col-12
+    width: 100%
