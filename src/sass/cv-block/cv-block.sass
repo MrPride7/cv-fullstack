@@ -23,6 +23,8 @@
         width: 100%
         margin-left: 10px
         border-top: 5px solid $mainColor
+        @media only screen and (min-width: 800px) and (max-width: 1024px), (min-width: 320px) and (max-width: 420px)
+            display: none
 
 .cv-block__text
     font-size: 1.06rem
@@ -45,6 +47,8 @@
 .cv-block__item_secondary
     display: inline
     white-space: nowrap
+    @media only screen and (min-width: 800px) and (max-width: 1024px)
+        display: block
 
 .cv-block__subtitle
     margin: 0.3rem 0
